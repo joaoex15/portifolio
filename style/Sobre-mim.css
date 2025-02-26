@@ -1,0 +1,51 @@
+/* Seção Sobre-mim */
+.Sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px; /* Ajustando o padding para não ficar muito baixo */
+    gap: 2%;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    height: auto; /* Removendo a altura fixa e deixando ela se ajustar */
+    min-height: 40vh; /* Definindo uma altura mínima */
+}
+
+.Quem-sou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.Quem-sou h1 {
+    font-size: 3rem;
+    color: hsl(261, 100%, 52%);
+    margin-bottom: 15px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.Quem-sou h1:hover {
+    color: hsl(261, 80%, 60%);
+}
+
+.Quem-sou h3 {
+    color: #5f2fb8;
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 100%;
+    margin-top: 0;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+    padding: 0 10px;
+}
+
+.Quem-sou h3:hover {
+    color: hsl(261, 80%, 60%);
+}

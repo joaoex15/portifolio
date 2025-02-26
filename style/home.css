@@ -1,0 +1,89 @@
+/* Seção Home */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 10%; /* Ajuste para o padding de forma mais proporcional */
+    background-color: hwb(0 97% 3%);
+    color: white;
+    height: 75vh; /* Garante que a seção ocupe a altura total da tela */
+}
+
+/* Apresentação */
+.Apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5% 10%; /* Ajuste no padding para maior aproveitamento de espaço */
+    font-family: 'Ubuntu', sans-serif;
+    color: #5f2fb8;
+    margin-top: 0; /* Remove a margem superior para melhor aproveitamento */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+}
+
+.Apresentacao h1 {
+    font-size: 6rem; /* Aumenta o tamanho da fonte */
+    margin: 0;
+}
+
+.Apresentacao h3 {
+    font-size: 3.5rem; /* Aumenta o tamanho da fonte */
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.Apresentacao a {
+    display: inline-block;
+    padding: 20px 40px; /* Aumenta o tamanho do botão */
+    background-color: #5f2fb8; 
+    color: rgb(27, 0, 49); 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px; 
+    font-size: 32px; /* Aumenta o tamanho do texto */
+    transition: background-color 0.3s ease; 
+}
+
+.Apresentacao a:hover {
+    background-color: rgb(75, 20, 201); 
+    opacity: 0.7;
+}
+
+/* Imagem e Ícones */
+.home-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    padding: 0 10%; /* Ajusta o padding para não perder muito espaço */
+}
+
+.home-img img {
+    width: 400px; /* Aumenta o tamanho da imagem */
+    height: auto;
+    border-radius: 60%;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.home-img ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aumenta o espaço entre os ícones */
+    margin-top: 20px;
+}
+
+.home-img a img {
+    width: 60px; /* Aumenta o tamanho dos ícones */
+    height: auto;
+    transition: 0.3s;
+}
+
+.home-img a img:hover {
+    transform: scale(2); /* Aumenta o zoom do ícone */
+    opacity: 0.8;
+}

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.Navegacao {
+    background-color: #7729F5;
+    width: 100%;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.conj-menu-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espaçamento entre itens */
+}
+
+.itens-menu-nav {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}

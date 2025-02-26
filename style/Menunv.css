@@ -1,0 +1,53 @@
+/* Resetando margens, bordas e padding */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box; /* Para garantir que padding e bordas não afetem o tamanho */
+}
+
+/* Estilos da navegação */
+.Navegacao {
+    background-color: #7729F5;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center;
+}
+
+/* Menu de navegação */
+.menu-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Adicionando um padding lateral */
+}
+
+/* Container dos itens de menu */
+.conj-menu-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Aumentando o espaço entre os itens */
+}
+
+/* Estilos dos itens do menu */
+.itens-menu-nav a {
+    color: rgb(0, 0, 0);
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+/* Efeito ao passar o mouse */
+.itens-menu-nav a:hover {
+    font-size: 22px; /* Aumenta o tamanho da fonte no hover */
+    color: wheat; /* Alteração na cor */
+    transform: scale(1.1); /* Leve aumento de tamanho ao passar o mouse */
+}
