@@ -1,0 +1,54 @@
+.Skills {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Skills h2 {
+    font-size: 2.5rem;
+    color: hsl(261, 100%, 52%);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Ajustei o tamanho para que os cards fiquem mais proporcionais */
+    text-align: center;
+    background-color: #fff; /* Fundo branco para destacar cada card */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave para o hover */
+}
+
+.skill-item img {
+    width: 60px; /* Ajustei o tamanho da imagem para ficar proporcional ao card */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px; /* Maior espaço entre a imagem e o texto */
+}
+
+.skill-item p {
+    font-size: 1.1rem; /* Reduzi um pouco o tamanho da fonte para melhorar o equilíbrio */
+    color: #5f2fb8;
+    font-weight: 500;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px); /* Eleva o card quando o mouse passa */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar destaque */
+}
+
+.skill-item:hover p {
+    color: hsl(261, 80%, 60%); /* Muda a cor do texto quando o card é hoverizado */
+}

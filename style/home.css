@@ -23,12 +23,12 @@
 }
 
 .Apresentacao h1 {
-    font-size: 6rem; /* Aumenta o tamanho da fonte */
+    font-size: 4rem; /* Aumenta o tamanho da fonte */
     margin: 0;
 }
 
 .Apresentacao h3 {
-    font-size: 3.5rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
     margin: 10px 0;
     font-weight: 300;
 }
@@ -62,7 +62,7 @@
 }
 
 .home-img img {
-    width: 400px; /* Aumenta o tamanho da imagem */
+    width: 350px; /* Aumenta o tamanho da imagem */
     height: auto;
     border-radius: 60%;
     box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.2); 
@@ -84,6 +84,6 @@
 }
 
 .home-img a img:hover {
-    transform: scale(2); /* Aumenta o zoom do ícone */
+    transform: scale(1.5); /* Aumenta o zoom do ícone */
     opacity: 0.8;
 }
