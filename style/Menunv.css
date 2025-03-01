@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo */
     align-items: center;
+    padding: 0%;
 }
 
 /* Menu de navegação */
@@ -50,4 +51,78 @@ body {
     font-size: 22px; /* Aumenta o tamanho da fonte no hover */
     color: wheat; /* Alteração na cor */
     transform: scale(1.1); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas pequenas (celulares - até 767px) */
+@media (max-width: 767px) {
+    .Navegacao {
+        height: 50px; /* Reduz a altura da barra de navegação */
+    }
+
+    .menu-nav {
+        justify-content: center; /* Centraliza o menu em telas pequenas */
+        padding: 0 10px; /* Reduz o padding lateral */
+    }
+
+    .conj-menu-nav {
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
+    .itens-menu-nav a {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    .itens-menu-nav a:hover {
+        font-size: 18px; /* Ajusta o tamanho da fonte no hover */
+    }
+}
+
+/* Telas médias (tablets - 768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Navegacao {
+        height: 60px; /* Ajusta a altura da barra de navegação */
+    }
+
+    .menu-nav {
+        justify-content: flex-end; /* Alinha o menu à direita */
+        padding: 0 15px; /* Ajusta o padding lateral */
+    }
+
+    .conj-menu-nav {
+        gap: 15px; /* Ajusta o espaço entre os itens */
+    }
+
+    .itens-menu-nav a {
+        font-size: 17px; /* Ajusta o tamanho da fonte */
+    }
+
+    .itens-menu-nav a:hover {
+        font-size: 20px; /* Ajusta o tamanho da fonte no hover */
+    }
+}
+
+/* Telas grandes (desktops - a partir de 1024px) */
+@media (min-width: 1024px) {
+    .Navegacao {
+        height: 70px; /* Aumenta a altura da barra de navegação */
+    }
+
+    .menu-nav {
+        justify-content: flex-end; /* Alinha o menu à direita */
+        padding: 0 20px; /* Mantém o padding lateral */
+    }
+
+    .conj-menu-nav {
+        gap: 20px; /* Mantém o espaço entre os itens */
+    }
+
+    .itens-menu-nav a {
+        font-size: 18px; /* Mantém o tamanho da fonte */
+    }
+
+    .itens-menu-nav a:hover {
+        font-size: 22px; /* Mantém o tamanho da fonte no hover */
+    }
 }

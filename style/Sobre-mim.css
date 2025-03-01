@@ -58,3 +58,26 @@
     max-width: 80%;
     text-align: justify;
 }
+
+@media (max-width: 767px) {
+    .Sobre-mim {
+        padding: 15px; /* Reduz o padding para economizar espaço */
+        gap: px; /* Reduz o espaço entre os elementos */
+        min-height: auto; /* Remove a altura mínima fixa */
+    }
+
+    .Quem-sou {
+        padding: 10px; /* Reduz o padding interno */
+    }
+
+    .Quem-sou h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .Quem-sou h3 {
+        font-size: 1.0rem; /* Reduz o tamanho da fonte do subtítulo */
+        max-width: 100%; /* Aumenta a largura máxima para melhor leitura */
+
+    }
+
+}

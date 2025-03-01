@@ -1,4 +1,4 @@
-/* Seção Home */
+/* Estilos base (para todas as telas) */
 .Home {
     display: flex;
     align-items: center;
@@ -9,7 +9,6 @@
     height: 75vh; /* Garante que a seção ocupe a altura total da tela */
 }
 
-/* Apresentação */
 .Apresentacao {
     display: flex;
     flex-direction: column;
@@ -50,7 +49,6 @@
     opacity: 0.7;
 }
 
-/* Imagem e Ícones */
 .home-img {
     display: flex;
     flex-direction: column;
@@ -86,4 +84,75 @@
 .home-img a img:hover {
     transform: scale(1.5); /* Aumenta o zoom do ícone */
     opacity: 0.8;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas pequenas (celulares - até 767px) */
+@media (max-width: 767px) {
+    .Home {
+        flex-direction: column-reverse; /* Altera a direção do flex para empilhar os elementos */
+        padding: 10% 5%; /* Reduz o padding para economizar espaço */
+        height: auto; /* Remove a altura fixa */
+    }
+
+    .Apresentacao {
+        align-items: center; /* Centraliza o conteúdo */
+        text-align: center; /* Centraliza o texto */
+        padding: 5%; /* Reduz o padding */
+    }
+
+    .Apresentacao h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .Apresentacao h3 {
+        font-size: 1.25rem; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    .Apresentacao a {
+        padding: 15px 30px; /* Reduz o tamanho do botão */
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .home-img {
+        padding: 5%; /* Reduz o padding */
+    }
+
+    .home-img img {
+        width: 250px; /* Reduz o tamanho da imagem */
+    }
+
+    .home-img a img {
+        width: 40px; /* Reduz o tamanho dos ícones */
+    }
+}
+
+/* Telas grandes (desktops - a partir de 1024px) */
+@media (min-width: 1024px) {
+    .Home {
+        padding: 5% 10%; /* Mantém o padding original */
+        height: 75vh; /* Mantém a altura fixa */
+    }
+
+    .Apresentacao h1 {
+        font-size: 4rem; /* Mantém o tamanho da fonte do título */
+    }
+
+    .Apresentacao h3 {
+        font-size: 1.5rem; /* Mantém o tamanho da fonte do subtítulo */
+    }
+
+    .Apresentacao a {
+        padding: 20px 40px; /* Mantém o tamanho do botão */
+        font-size: 2rem; /* Mantém o tamanho da fonte do botão */
+    }
+
+    .home-img img {
+        width: 350px; /* Mantém o tamanho da imagem */
+    }
+
+    .home-img a img {
+        width: 60px; /* Mantém o tamanho dos ícones */
+    }
 }

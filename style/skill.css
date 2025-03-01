@@ -1,3 +1,4 @@
+/* Estilos base (para todas as telas) */
 .Skills {
     background-color: #f8f8f8;
     padding: 50px 20px;
@@ -51,4 +52,36 @@
 
 .skill-item:hover p {
     color: hsl(261, 80%, 60%); /* Muda a cor do texto quando o card é hoverizado */
+}
+
+/* Media Query para Telas Pequenas (celulares - até 767px) */
+@media (max-width: 767px) {
+    .Skills {
+        padding: 30px 10px; /* Reduz o padding para economizar espaço */
+    }
+
+    .Skills h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 20px; /* Reduz a margem inferior */
+    }
+
+    .skills-list {
+        gap: 15px; /* Reduz o espaço entre os cards */
+        justify-content: center; /* Centraliza os cards horizontalmente */
+    }
+
+    .skill-item {
+        width: 120px; /* Reduz a largura dos cards */
+        padding: 15px; /* Reduz o padding interno */
+    }
+
+    .skill-item img {
+        width: 50px; /* Reduz o tamanho da imagem */
+        height: 50px;
+        margin-bottom: 10px; /* Reduz o espaço entre a imagem e o texto */
+    }
+
+    .skill-item p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do texto */
+    }
 }

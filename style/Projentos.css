@@ -1,3 +1,4 @@
+/* Estilos base (para todas as telas) */
 .Projetos {
     background-color: #f8f8f8;
     padding: 50px 20px;
@@ -65,4 +66,45 @@
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query para Telas Pequenas (celulares - até 767px) */
+@media (max-width: 767px) {
+    .Projetos {
+        padding: 30px 10px; /* Reduz o padding para economizar espaço */
+    }
+
+    .Projetos h2 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 20px; /* Reduz a margem inferior */
+    }
+
+    .projects-container {
+        gap: 15px; /* Reduz o espaço entre os cards */
+        justify-content: center; /* Centraliza os cards horizontalmente */
+    }
+
+    .project-card {
+        width: 100%; /* Faz o card ocupar toda a largura disponível */
+        max-width: 250px; /* Define uma largura máxima menor para o card */
+        padding: 15px; /* Reduz o padding interno */
+    }
+
+    .project-card img {
+        height: 120px; /* Reduz a altura da imagem */
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título do card */
+    }
+
+    .project-card p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do parágrafo */
+        margin-bottom: 15px; /* Reduz a margem inferior */
+    }
+
+    .project-card .btn-projeto {
+        padding: 8px 16px; /* Reduz o tamanho do botão */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+    }
 }
